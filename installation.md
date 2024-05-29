@@ -19,3 +19,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 Docker Compose version v2.27.0
 ```
+
+https://docs.liquibase.com/start/tutorials/mysql.html
+To use Liquibase and MySQL, you need the JDBC driver JAR file (Maven download).
+To use the Liquibase CLI, place your JAR file(s) in the liquibase/lib directory.

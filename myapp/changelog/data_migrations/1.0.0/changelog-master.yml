@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: 1.0.0_LOCAL
-      author: somjit
+      author: liquibase
       context: LOCAL
       changes:
         - sqlFile:
@@ -10,7 +10,7 @@ databaseChangeLog:
 
   - changeSet:
       id: 1.0.0_DEV
-      author: somjit
+      author: liquibase
       context: DEV
       changes:
         - sqlFile:
@@ -19,7 +19,7 @@ databaseChangeLog:
 
   - changeSet:
     id: 1.0.0_UAT
-    author: somjit
+    author: liquibase
     context: UAT
     changes:
       - sqlFile:
@@ -28,7 +28,7 @@ databaseChangeLog:
 
   - changeSet:
     id: 1.0.0_PROD
-    author: somjit
+    author: liquibase
     context: PROD
     changes:
       - sqlFile:
