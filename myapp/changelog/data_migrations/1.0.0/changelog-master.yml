@@ -18,19 +18,19 @@ databaseChangeLog:
             relativeToChangeLogFile: true
 
   - changeSet:
-    id: 1.0.0_UAT
-    author: liquibase
-    context: UAT
-    changes:
-      - sqlFile:
-          path: bank_ref_data.sql
-          relativeToChangeLogFile: true
+      id: 1.0.0_UAT
+      author: liquibase
+      context: UAT
+      changes:
+        - sqlFile:
+            path: bank_ref_data.sql
+            relativeToChangeLogFile: true
 
   - changeSet:
-    id: 1.0.0_PROD
-    author: liquibase
-    context: PROD
-    changes:
-      - sqlFile:
-          path: bank_ref_data.sql
-          relativeToChangeLogFile: true
+      id: 1.0.0_PROD
+      author: liquibase
+      context: PROD
+      changes:
+        - sqlFile:
+            path: bank_ref_data.sql
+            relativeToChangeLogFile: true
