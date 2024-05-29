@@ -2,7 +2,7 @@ databaseChangeLog:
   - changeSet:
       id: 1.0.0_LOCAL
       author: somjit
-      context: local
+      context: LOCAL
       changes:
         - sqlFile:
             path: create_tables.sql
@@ -11,7 +11,7 @@ databaseChangeLog:
   - changeSet:
       id: 1.0.0_DEV
       author: somjit
-      context: dev
+      context: DEV
       changes:
         - sqlFile:
             path: create_tables.sql
@@ -20,7 +20,7 @@ databaseChangeLog:
   - changeSet:
     id: 1.0.0_UAT
     author: somjit
-    context: uat
+    context: UAT
     changes:
       - sqlFile:
           path: create_tables.sql
@@ -29,7 +29,7 @@ databaseChangeLog:
   - changeSet:
     id: 1.0.0_PROD
     author: somjit
-    context: prod
+    context: PROD
     changes:
       - sqlFile:
           path: create_tables.sql
