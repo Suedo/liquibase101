@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0.0_LOCAL
+      author: somjit
+      context: local
+      changes:
+        - sqlFile:
+            path: bank_ref_data.sql
+            relativeToChangeLogFile: true
+
+  - changeSet:
+      id: 1.0.0_DEV
+      author: somjit
+      context: dev
+      changes:
+        - sqlFile:
+            path: bank_ref_data.sql
+            relativeToChangeLogFile: true
+
+  - changeSet:
+    id: 1.0.0_UAT
+    author: somjit
+    context: uat
+    changes:
+      - sqlFile:
+          path: bank_ref_data.sql
+          relativeToChangeLogFile: true
+
+  - changeSet:
+    id: 1.0.0_PROD
+    author: somjit
+    context: prod
+    changes:
+      - sqlFile:
+          path: bank_ref_data.sql
+          relativeToChangeLogFile: true
