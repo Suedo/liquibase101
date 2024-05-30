@@ -5,3 +5,6 @@ databaseChangeLog:
   - include:
       file: data_migrations/1.0.0/changelog-master.yml
       relativeToChangeLogFile: true
+  - include:
+      file: 1.0.1/changelog-master.yml
+      relativeToChangelogFile: true

@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0.1_LOCAL
+      author: liquibase
+      context: LOCAL
+      changes:
+        - sqlFile:
+            path: add_primary_key_bank_ref_data.sql
+            relativeToChangeLogFile: true
+
+  - changeSet:
+      id: 1.0.1_DEV
+      author: liquibase
+      context: DEV
+      changes:
+        - sqlFile:
+            path: add_primary_key_bank_ref_data.sql
+            relativeToChangeLogFile: true
+
+  - changeSet:
+      id: 1.0.1_UAT
+      author: liquibase
+      context: UAT
+      changes:
+        - sqlFile:
+            path: add_primary_key_bank_ref_data.sql
+            relativeToChangeLogFile: true
+
+  - changeSet:
+      id: 1.0.1_PROD
+      author: liquibase
+      context: PROD
+      changes:
+        - sqlFile:
+            path: add_primary_key_bank_ref_data.sql
+            relativeToChangeLogFile: true
