@@ -8,3 +8,9 @@ databaseChangeLog:
   - include:
       file: 1.0.1/changelog-master.yml
       relativeToChangelogFile: true
+  - include:
+      file: 1.0.2/changelog-master.yml
+      relativeToChangeLogFile: true
+  - include:
+      file: data_migrations/1.0.2/changelog-master.yml
+      relativeToChangeLogFile: true

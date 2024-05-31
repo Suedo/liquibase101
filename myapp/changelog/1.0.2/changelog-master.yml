@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0.2_LOCAL
+      author: liquibase
+      context: LOCAL
+      changes:
+        - sqlFile:
+            path: add_department_table.sql
+            relativeToChangeLogFile: true
+        - sqlFile:
+            path: add_employee_table.sql
+            relativeToChangeLogFile: true
+# we are breaking it into two files to ensure the department table is added first, because employee table needs it during creation due to its fk ref
+
+  - changeSet:
+      id: 1.0.2_DEV
+      author: liquibase
+      context: DEV
+      changes:
+        - sqlFile:
+            path: add_department_table.sql
+            relativeToChangeLogFile: true
+        - sqlFile:
+            path: add_employee_table.sql
+            relativeToChangeLogFile: true
+
+  - changeSet:
+      id: 1.0.2_UAT
+      author: liquibase
+      context: UAT
+      changes:
+        - sqlFile:
+            path: add_department_table.sql
+            relativeToChangeLogFile: true
+        - sqlFile:
+            path: add_employee_table.sql
+            relativeToChangeLogFile: true
+
+  - changeSet:
+      id: 1.0.2_PROD
+      author: liquibase
+      context: PROD
+      changes:
+        - sqlFile:
+            path: add_department_table.sql
+            relativeToChangeLogFile: true
+        - sqlFile:
+            path: add_employee_table.sql
+            relativeToChangeLogFile: true
