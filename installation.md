@@ -37,7 +37,6 @@ export PATH=$PATH:/path/to/your/liquibase-4.28.0
 ### Requirement if using MySQL 
 
 By default, liquibase doesn't ship with mysql jar in its lib.
-
 https://docs.liquibase.com/start/tutorials/mysql.html
 To use Liquibase and MySQL, you need the JDBC driver JAR file (Maven download).
 To use the Liquibase CLI, place your JAR file(s) in the liquibase/lib directory.
